@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vedantchaudhari.dev/sitemap.xml
