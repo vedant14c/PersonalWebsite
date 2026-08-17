@@ -148,7 +148,7 @@ function Hero() {
                         <div className="hero-phone-notch" />
                         <div className="hero-phone-screen">
                             <img
-                                src="/projects/spacehub.png"
+                                src="/projects/spacehubMobile.png"
                                 alt="SpaceHub app running on a phone"
                             />
                         </div>
