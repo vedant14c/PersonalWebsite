@@ -9,6 +9,7 @@ const skillRoutes = require("./src/routes/skill.routes");
 const educationRoutes = require("./src/routes/education.routes");
 const contactRoutes = require("./src/routes/contact.routes");
 const certificationRoutes = require("./src/routes/certification.routes");
+const adminRoutes = require("./src/routes/admin.routes");
 const app = express();
 
 app.use(cors());
@@ -19,6 +20,7 @@ app.use("/api/skills", skillRoutes);
 app.use("/api/education", educationRoutes);
 app.use("/api/contact", contactRoutes);
 app.use("/api/certifications", certificationRoutes);
+app.use("/api/admin", adminRoutes);
 
 app.get("/api/health", async (req, res) => {
     try {
