@@ -1,0 +1,480 @@
+/* =========================================
+   ADMIN SKILLS
+   ========================================= */
+
+.admin-skills {
+    min-height: 100vh;
+    background:
+        radial-gradient(
+            circle at 80% 0%,
+            rgba(90, 90, 180, 0.12),
+            transparent 35%
+        ),
+        #08090c;
+    color: #f5f5f5;
+}
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.admin-skills-header {
+    min-height: 90px;
+    padding: 0 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    background: rgba(8, 9, 12, 0.85);
+    backdrop-filter: blur(18px);
+
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.admin-skills-header h1 {
+    margin: 4px 0 2px;
+
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.admin-skills-header p {
+    margin: 0;
+
+    color: #777984;
+    font-size: 13px;
+}
+
+.admin-skills-back {
+    padding: 10px 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 8px;
+
+    background: rgba(255, 255, 255, 0.025);
+    color: #e9e9ec;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+.admin-skills-back:hover {
+    background: #f5f5f5;
+    color: #08090c;
+}
+
+/* =========================================
+   CONTENT
+   ========================================= */
+
+.admin-skills-content {
+    width: min(1180px, 88%);
+    margin: auto;
+
+    padding: 65px 0 100px;
+}
+
+/* =========================================
+   TOOLBAR
+   ========================================= */
+
+.admin-skills-toolbar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+.admin-skills-count {
+    color: #777984;
+
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.admin-skills-toolbar h2 {
+    margin: 8px 0 0;
+
+    font-size: 38px;
+    letter-spacing: -1.5px;
+}
+
+.admin-add-skill-button {
+    padding: 12px 19px;
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 9px;
+
+    background: #f5f5f5;
+    color: #08090c;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease;
+}
+
+.admin-add-skill-button:hover {
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   MESSAGE
+   ========================================= */
+
+.admin-skills-message {
+    margin-bottom: 20px;
+    padding: 13px 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 9px;
+
+    background: rgba(255, 255, 255, 0.025);
+
+    color: #a9abb5;
+    font-size: 13px;
+}
+
+/* =========================================
+   FORM
+   ========================================= */
+
+.admin-skill-form {
+    margin-bottom: 35px;
+    padding: 28px;
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.045),
+            rgba(255, 255, 255, 0.015)
+        );
+}
+
+.admin-form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-bottom: 28px;
+}
+
+.admin-form-header h2 {
+    margin: 6px 0 0;
+
+    font-size: 27px;
+}
+
+.admin-form-close {
+    width: 36px;
+    height: 36px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+
+    background: transparent;
+    color: #aaa;
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+.admin-form-close:hover {
+    background: rgba(255, 255, 255, 0.07);
+    color: white;
+}
+
+.admin-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 180px;
+    gap: 18px;
+}
+
+.admin-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.admin-form-group label {
+    color: #858792;
+
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.admin-form-group input {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 13px 14px;
+
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    border-radius: 8px;
+
+    outline: none;
+
+    background: rgba(0, 0, 0, 0.2);
+    color: #f5f5f5;
+
+    font-size: 14px;
+}
+
+.admin-form-group input:focus {
+    border-color: rgba(255, 255, 255, 0.35);
+}
+
+.admin-form-group input::placeholder {
+    color: #555761;
+}
+
+.admin-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+.admin-cancel-button,
+.admin-save-button {
+    padding: 11px 18px;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+.admin-cancel-button {
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    background: transparent;
+    color: #aaa;
+}
+
+.admin-save-button {
+    border: 1px solid #f5f5f5;
+
+    background: #f5f5f5;
+    color: #08090c;
+}
+
+.admin-save-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* =========================================
+   SKILLS LIST
+   ========================================= */
+
+.admin-skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.admin-skill-card {
+    display: grid;
+
+    grid-template-columns: 80px 1fr 130px auto;
+    align-items: center;
+
+    gap: 20px;
+
+    min-height: 90px;
+    padding: 0 22px;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.025);
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+.admin-skill-card:hover {
+    transform: translateX(3px);
+
+    border-color: rgba(255, 255, 255, 0.18);
+
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.admin-skill-number {
+    color: #555761;
+
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.admin-skill-category {
+    color: #858792;
+
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.admin-skill-info h3 {
+    margin: 5px 0 0;
+
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.admin-skill-order {
+    color: #666873;
+
+    font-size: 11px;
+}
+
+.admin-skill-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.admin-edit-button,
+.admin-delete-button {
+    padding: 8px 12px;
+
+    border-radius: 7px;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.admin-edit-button {
+    border: 1px solid rgba(255, 255, 255, 0.13);
+
+    background: transparent;
+    color: #ddd;
+}
+
+.admin-delete-button {
+    border: 1px solid rgba(255, 80, 80, 0.22);
+
+    background: rgba(255, 80, 80, 0.04);
+    color: #e58b8b;
+}
+
+.admin-edit-button:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.admin-delete-button:hover {
+    background: rgba(255, 80, 80, 0.10);
+}
+
+/* =========================================
+   EMPTY STATE
+   ========================================= */
+
+.admin-empty-state {
+    padding: 60px 20px;
+
+    border: 1px dashed rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+
+    text-align: center;
+}
+
+.admin-empty-state h3 {
+    margin: 0 0 8px;
+}
+
+.admin-empty-state p {
+    margin: 0;
+
+    color: #777984;
+    font-size: 13px;
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .admin-skills-content {
+        width: 90%;
+        padding-top: 45px;
+    }
+
+    .admin-skills-toolbar {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .admin-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-skill-card {
+        grid-template-columns: 1fr;
+        gap: 8px;
+
+        padding: 18px;
+    }
+
+    .admin-skill-number {
+        display: none;
+    }
+
+    .admin-skill-order {
+        display: none;
+    }
+
+    .admin-skill-actions {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .admin-skills-header {
+        padding: 15px 20px;
+    }
+
+    .admin-skills-header h1 {
+        font-size: 20px;
+    }
+
+    .admin-skills-back {
+        padding: 8px 11px;
+        font-size: 11px;
+    }
+
+    .admin-skills-toolbar h2 {
+        font-size: 32px;
+    }
+
+    .admin-skill-form {
+        padding: 20px;
+    }
+}
